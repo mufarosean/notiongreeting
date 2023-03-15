@@ -21,7 +21,7 @@
 		function displayGreeting() {
 			var date = new Date();
 			var hour = date.getHours();
-			var minute = date.getMinutes();
+			var minute = date.getMinutes().toString().padStart(2, '0');
 
 			var greeting;
 
