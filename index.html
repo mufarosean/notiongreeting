@@ -28,13 +28,16 @@
 
 			if (hour < 12) {
 				greeting = "Good morning";
+				ending = "AM";
 			} else if (hour < 18) {
 				greeting = "Good afternoon";
+				ending = "PM";
 			} else {
 				greeting = "Good evening";
+				ending = "PM";
 			}
 
-			document.getElementById("greeting").innerHTML = greeting + ", the time is currently " + hour + ":" + minute;
+			document.getElementById("greeting").innerHTML = greeting + ", the time is currently " + hour + ":" + minute + " " +ending;
 		}
 	</script>
 </head>
