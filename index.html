@@ -28,13 +28,13 @@
 
 			if (hour < 12) {
 				greeting = "Good morning";
-				ending = "AM";
+				ending = "AM.";
 			} else if (hour < 18) {
 				greeting = "Good afternoon";
-				ending = "PM";
+				ending = "PM.";
 			} else {
 				greeting = "Good evening";
-				ending = "PM";
+				ending = "PM.";
 			}
 
 			document.getElementById("greeting").innerHTML = greeting + ", the time is currently " + hour + ":" + minute + " " +ending;
@@ -43,7 +43,6 @@
 </head>
 <body onload="displayGreeting()">
 	<div id="inspiring-message">
-		<h1 id="greeting"></h1>
 	</div>
 </body>
 </html>
