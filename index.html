@@ -38,6 +38,7 @@
 
 			document.getElementById("inspiring-message").innerHTML = greeting + ", the time is currently " + hour + ":" + minute + " " +ending;
 		}
+		setInterval(displayGreeting, 60000);
 	</script>
 </head>
 <body onload="displayGreeting()">
