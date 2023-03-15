@@ -1,0 +1,58 @@
+<html>
+<head>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #inspiring-message {
+      background-color: white;
+      font-family: 'Old Standard TT', serif;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <script>
+    var messages = [
+      "“Man is condemned to be free.” - Jean-Paul Sartre",
+      "“I cannot escape the feeling that they belong together. Freedom demands love. Love demands freedom. Not in the meager proportions do they flourish but in a certain indissoluble interdependence.” - Martin Buber",
+      "“Freedom is the will to be responsible for ourselves.” - Friedrich Nietzsche",
+      "“There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy.” - Albert Camus",
+      "“Freedom is not the absence of commitments, but the ability to choose yours.” - Paulo Coelho",
+      "“The individual has always had to struggle to keep from being overwhelmed by the tribe. If you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.” - Friedrich Nietzsche",
+      "“If I am what I have and if I lose what I have, who then am I?” - Erich Fromm",
+      "“Existentialism is about being a saint without God; being your own hero, without all the sanction and support of religion or society.” - Anita Brookner",
+      "“Man is not fully conditioned and determined but rather determines himself whether he gives in to conditions or stands up to them. In other words, man is ultimately self-determining. Man does not simply exist but always decides what his existence will be, what he will become in the next moment.” - Viktor Frankl",
+      "“To be free is not to have the power to do anything you want; it is to be able to surpass the given toward an open future.” - Simone de Beauvoir",
+      "“Freedom is not something that anybody can be given; freedom is something people take and people are as free as they want to be.” - James Baldwin",
+      "“The most important kind of freedom is to be what you really are. You trade in your reality for a role. You give up your ability to feel, and in exchange, put on a mask.” - Jim Morrison",
+      "“In order to be free, we must learn how to let go. Release the hurt. Release the fear. Refuse to entertain the old pain.” - Mary Manin Morrissey",
+      "“Freedom is the possibility of isolation. You are free if you can withdraw from people, not having to seek them out for the sake of money, company, love, glory or curiosity, none of which can thrive in silence and solitude. If you can’t live alone, you were born a slave.” - Fernando Pessoa",
+      "“The self is only that which it is in the process of becoming.” - Søren Kierkegaard",
+      "“Freedom is not the absence of commitments, but the ability to choose - and commit myself to - what is best for me.” - Paulo Coelho",
+      "“We are our choices.” - Jean-Paul Sartre",
+      "“To be free is not to have the power to do anything you want; it is to be able to surpass the given toward an open future.” - Simone de Beauvoir",
+      "“I am not a thing, but a pattern of my life, a configuration of experiences.” - Michel de Montaigne",
+      "“Freedom is what you do with what's been done to you.” - Jean-Paul Sartre",
+    ];
+
+    var currentMessage = 0;
+
+    function sendInspiringMessage() {
+      document.getElementById("inspiring-message").innerHTML = messages[currentMessage];
+      currentMessage = (currentMessage + 1) % messages.length;
+    }
+
+    window.onload = sendInspiringMessage;
+    setInterval(sendInspiringMessage, 3600000);
+  </script>
+</head>
+<body>
+  <div id="inspiring-message"></div>
+</body>
+</html>
